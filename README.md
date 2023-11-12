@@ -1,6 +1,5 @@
 <img width="1510" alt="Screenshot 2023-11-12 at 06 17 21" src="https://github.com/marvinjude/chess-tournament/assets/17142206/2d88ca96-908c-4d54-b3bb-9ae263e5887b">
 
-
 ## chess-tournament
 
 FEN notation is like the language most chess apps speak. It helps show where the chess pieces are on the board and whose turn it is to make the next move. With this app, you can type in FEN notation, and it'll draw the chessboard for you. Plus, moving pieces is easy – just click where you want to move from and where you want to move to. You can also swap pieces by double-clicking.
@@ -50,7 +49,6 @@ Lots of design choices were made during the development of this app, but the maj
 - **Built to be accessible from the ground up**: Whether you want to **tab** around or use the **arrow keys** to navigate between cells, I got you! most features in this application are built so that you won't need a mouse.
 
 - **Tactile Feedback**: Aside from the visual feedback you get when you click around, this application also uses sounds to convey the current action to the user which could make them feel immersed in the 'Game'
-
 
 ### Additions
 
@@ -114,6 +112,8 @@ Lots of design choices were made during the development of this app, but the maj
 
 - [ ] Write more tests!
 - [ ] Fix issue with tabbing in Safari
+- [ ] Theme swithing on mobile
+- [ ] Improve Perf
 
 ### Credits
 
