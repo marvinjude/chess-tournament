@@ -1,5 +1,6 @@
 import { useState, FormEvent, useEffect, useContext } from "react";
 import { isValidFENotation } from "@/lib/utils/chess-utils";
+import { isMobileDevice } from "@/lib/utils/app-utils";
 import { ChessBoard } from "@/components/ChessBoard";
 import useLocalStorage from "@/lib/hooks/use-localstorage";
 import { SoundContext, SoundContextType } from "./contexts/Sound";
@@ -171,41 +172,43 @@ const App = () => {
       </div>
 
       <div className="fixed bottom-0 right-0 pr-10 pb-10">
-        <TipsDialog
-          items={[
-            () => (
-              <>
-                Borerd of the colors 🙂? Change the theme by pressing{" "}
-                <Kbd>Shift</Kbd> + <Kbd>T</Kbd> keys.
-              </>
-            ),
-            () => (
-              <>
-                <em className="font-bold">Double tap </em>on any piece to change
-                to another piece of the same color
-              </>
-            ),
+        {!isMobileDevice && (
+          <TipsDialog
+            items={[
+              () => (
+                <>
+                  Borerd of the colors 🙂? Change the theme by pressing{" "}
+                  <Kbd>Shift</Kbd> + <Kbd>T</Kbd> keys.
+                </>
+              ),
+              () => (
+                <>
+                  <em className="font-bold">Double tap </em>on any piece to
+                  change to another piece of the same color
+                </>
+              ),
 
-            () => (
-              <>
-                Change the board by entering any valid FEN notation in the input
-                field
-              </>
-            ),
-            () => (
-              <>
-                Change the board to a random valid FEN notation by clicking the{" "}
-                <Kbd>Shift</Kbd> + <Kbd>R</Kbd> keys
-              </>
-            ),
-            () => (
-              <>
-                To move a piece, click on it and click on the square you want to
-                move it to
-              </>
-            ),
-          ]}
-        />
+              () => (
+                <>
+                  Change the board by entering any valid FEN notation in the
+                  input field
+                </>
+              ),
+              () => (
+                <>
+                  Change the board to a random valid FEN notation by clicking
+                  the <Kbd>Shift</Kbd> + <Kbd>R</Kbd> keys
+                </>
+              ),
+              () => (
+                <>
+                  To move a piece, click on it and click on the square you want
+                  to move it to
+                </>
+              ),
+            ]}
+          />
+        )}
       </div>
     </div>
   );
