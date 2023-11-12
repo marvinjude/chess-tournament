@@ -5,6 +5,7 @@ const sounds = {
   CELL_CLICK: "click.mp3",
   RANDOM_FEN: "random.mp3",
   SWITCH: "switch.mp3",
+  MOVE: "move.mp3",
 };
 
 export type SoundContextType = {

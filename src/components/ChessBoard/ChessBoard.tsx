@@ -108,6 +108,8 @@ const ChessBoard = ({ fen, onChange: setFen, disabled }: ChessBoardProps) => {
         ],
       });
 
+      playSound("MOVE");
+
       if (setFen) setFen(fenAfterMove);
 
       setCurrentCell({ row: newRow, col: newCol });
