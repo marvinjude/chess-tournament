@@ -115,6 +115,7 @@ Lots of design choices were made during the development of this app, but the maj
 - [ ] Theme swithing on mobile
 - [ ] Make 'Generate Random' more random instead of using a finitie set of FEN
 - [ ] Improve Perf
+- [ ] Setup GitHub Actions to deploy to Netlify only when tests pass
 
 ### Credits
 
