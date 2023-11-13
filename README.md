@@ -113,6 +113,7 @@ Lots of design choices were made during the development of this app, but the maj
 - [ ] Write more tests!
 - [ ] Fix issue with tabbing in Safari
 - [ ] Theme swithing on mobile
+- [ ] Make 'Generate Random' more random instead of using a finitie set of FEN
 - [ ] Improve Perf
 
 ### Credits
