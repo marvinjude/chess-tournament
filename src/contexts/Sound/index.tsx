@@ -33,7 +33,7 @@ export const SoundContextProvider = ({
 }) => {
   const [soundEnabled, setSoundEnabled] = useLocalStorage(
     "soundEnabled",
-    false
+    true
   );
 
   const toggleSound = () => {
