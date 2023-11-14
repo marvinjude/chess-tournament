@@ -172,7 +172,7 @@ const App = () => {
       </div>
 
       <div className="fixed bottom-0 right-0 pr-10 pb-10">
-        {!isMobileDevice && (
+        {!isMobileDevice() && (
           <TipsDialog
             items={[
               () => (
