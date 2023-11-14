@@ -4,6 +4,11 @@ describe("Browser loads", () => {
     cy.get("body").should("contain", "FEN NOTATION");
   });
 
+  it("shows the Tips Dialog", () => {
+    cy.visit("/");
+    cy.get("body").should("contain", "GAME TIPS");
+  });
+
   it("loads with no console errors", () => {
     cy.visit("/", {
       onBeforeLoad(win) {
